@@ -24,6 +24,7 @@
  
  using std::cout;
  using std::endl;
+ typedef unsigned long long ull;
  
  int main(int argc, const char * argv[]) {
  
@@ -235,11 +236,11 @@
 #include <random>
 #include <chrono>
 
-/** @typedef ull is short for unsigned long long, the longest built-in integer type in the standard. */
-typedef unsigned long long ull;
-
 namespace IP {
     
+
+    /** @typedef ull is short for unsigned long long, the longest built-in integer type in the standard. */
+    typedef unsigned long long ull;
     
     static std::mt19937_64 generator_64((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());
     static std::mt19937 generator_32((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());
